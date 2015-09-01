@@ -19,13 +19,44 @@ What value do you think it offers?
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+	You can run git diff and git diff --staged to see the changes between the 
+	working directory and the staging area, and the staging area and the last 
+	commit respectively.  This ensures you know what changes you are about to 
+	commit, and that you can describe these changes accurately for the commit.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+	Creating branches can help in instances where you want to try out an 
+	experimental feature, when you have an alternate version while still needing
+	your working master code, or possibly to test different versions of code to
+	test performance.  Branches keep the variations on separate commit timelines
+	making them easier to keep track of.  It also makes it easier to checkout 
+	the different branches because you can refer to them by name.
+
 How do the diagrams help you visualize the branch structure?
+
+	The diagrams help demonstrate the chronology of the various commits and with
+	which branch they are associated with.  It shows what commit the new branch 
+	is based off of and what commits there are new changes that arent included.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+	The result is a combination of all changes to both branches since they were
+	diverged.  We represent it in the diagram with arrows off in different 
+	directions because the arrows point to the parent commit of each commit in 
+	the branch and eventually they have a common ancestor that git can use to 
+	determine what changes to keep.
+
 What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
 manually?
+
+	Automatic merging is great because it simply determines which changes to 
+	keep by the commit history and whether the lines were added or removed in 
+	any of them.  The downside is you wouldn't want Git automatically deciding 
+	which line to keep if they are different, so luckily the manual merge option
+	works great by pointing out the conflicts and letting you decide.  It is a
+	little bit more tedious by forcing you to merge the code yourself but it is 
+	better to have a human decision especially since you know the code better 
+	than any program can.
