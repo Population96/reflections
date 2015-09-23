@@ -1,1 +1,17 @@
+When would you want to use a remote repository rather than keeping all your work local?
+
+	Stores a backup for disaster recovery or hardware failure, serves as a 
+	central location for multiple users, and allows others to review your work. 
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+	So it doesn't overwrite work you've been performing that is uncommitted.
+	
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+	Clones are a duplicate of a repository and all of its commits, a branch is a
+	like an alternate timeline of a repository where experimental feature might 
+	be tested or different versions, and a fork is a clone of a repository from
+	one github user to another to be further modified and is linked back to the
+	creator's original repository.
 
