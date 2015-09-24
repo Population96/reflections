@@ -15,3 +15,8 @@ Describe the differences between forks, clones, and branches. When would you use
 	one github user to another to be further modified and is linked back to the
 	creator's original repository.
 
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+	Having the most up to date files to work off of, as well as to prevent as 
+	much manual merging/conflicts as possible.  Also great for working offline.
+	
